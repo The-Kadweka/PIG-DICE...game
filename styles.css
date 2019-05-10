@@ -9,8 +9,28 @@
 .card{
   opacity: 0.45;
   width: 40%;
+  margin: 0 auto;
+  float: none; 
+  clear: top;
+  clear: bottom;
 }
 
-h1{
+h1,h2{
   text-align: center;
+}
+h2{
+  margin-top: 5%;
+}
+button{
+  opacity: 0.99;
+}
+
+sect-2{
+  background-color: black;
+  /* opacity: 0.4; */
+  height: 400px;
+}
+.image{
+  height: 200px;
+  width: 200px;
 }
