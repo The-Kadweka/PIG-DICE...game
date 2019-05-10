@@ -3,38 +3,66 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 97vh;
+  height: 100vh;
 }
 
 .card{
-  opacity: 0.45;
-  width: 40%;
+  opacity: 0.75;
+  width: 25%;
   margin: 0 auto;
   float: none; 
-  clear: top;
-  clear: bottom;
 }
 
 h1,h2{
   text-align: center;
 }
 h2{
-  margin-top: 5%;
+  margin-top: 3%;
 }
 button{
   opacity: 0.99;
 }
 
-sect-2{
-background-image: url("images/img4.jpeg");
+.sect-2{
+background-image: url("./images/img4.jpeg");
 background-position: center;
 background-repeat: no-repeat;
+background-size: cover;
+display: none;
+border: 5px solid red;
+color: orangered;
+width: 50%;
+margin: 0 auto;
+width: 50%;
+height: 90vh;
 }
 .image{
   height: 200px;
   width: 200px;
 }
+img2{
+  margin: 0 8px;
+}
 
-.part2{
+.column {
+  float: left;
+   width: 30%;
+  padding: 5px;
+}
 
+.row::after {
+  content: "";
+  clear: both;
+}
+.row{
+  padding: 10%;
+  text-align: center;
+}
+
+img1{
+  float: left;
+}
+img2{
+  float: right;
+  margin-right: 25%;
 }
