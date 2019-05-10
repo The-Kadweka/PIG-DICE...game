@@ -6,9 +6,11 @@
   height: 97vh;
 }
 
-form{
-  width: 30%;
-}
 .card{
   opacity: 0.45;
+  width: 40%;
+}
+
+h1{
+  text-align: center;
 }
