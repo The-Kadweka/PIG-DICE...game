@@ -1,0 +1,14 @@
+.sect-1{
+  background-image: url("images/img2.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 97vh;
+}
+
+form{
+  width: 30%;
+}
+.card{
+  opacity: 0.45;
+}
