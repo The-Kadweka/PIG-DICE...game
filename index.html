@@ -15,13 +15,27 @@
   <link href="styles.css" rel="stylesheet">
   <link rel="icon" href="images/img0.jpeg" type="icon/image">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Concert+One|Josefin+Sans|Orbitron|Teko|Ultra" rel="stylesheet">
+
 </head>
 
 <body>
-  <h2>RULES OF THE GAME</h2>
-  <p>The rules are: There are two players. Each take turn to roll a 6-sided die; a player repeatedly rolls it until the player chooses to stop rolling and pass the dice to the other player, and add the sum of previous rolls to their points, or the player rolls a 1 during their turn, which all of their previous rolls are discarded and their turn ends immediately. The first to reach 100 points win. I've finished the code, tried to make it as robust as possible, and ended up with this:</p>
      <div class="container-fluid sect-1">
-          <div class="game row">
+       <div id="game2">
+        <h2>RULES OF THE GAME</h2>
+        <p>The rules are: There are two players. Each take turn to roll a 6-sided die; a player repeatedly rolls it until the player chooses to stop rolling and pass the dice to the other player, and add the sum of previous rolls to their points, or the player rolls a 1 during their turn, which all of their previous rolls are discarded and their turn ends immediately. The first to reach 100 points win. I've finished the code, tried to make it as robust as possible, and ended up with this:</p>
+            <div class="form">
+                <form>
+                <h2>ENTER-PLAYER'S NAME</h2>
+                  <input type="text" id="player1" name="firstname" placeholder="PLAYER2">
+                  <input type="text" id="player2" name="lastname" placeholder="PLAYER1">  
+                  <input type="submit" class="btn1" id="click"  value="Submit">
+                </form>
+              </div>
+            </div>
+
+          <div class="row" id="game">
             <div class="col-md-3">
               <h4>PLAYER1</h4>
                   <div class="dice1" id="dice1">SCORE::0</div>
@@ -38,8 +52,10 @@
       </di>
       </div>
     </div>
+    <footer>
+        &copyhussein18149-2019
+      </footer>
   </div>
-
 
     <!-- SCRIPTS -->
   <!-- JQuery -->
@@ -52,5 +68,4 @@
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
-
 </html>
