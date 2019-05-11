@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,6 +18,8 @@
 </head>
 
 <body>
+  <h2>RULES OF THE GAME</h2>
+  <p>The rules are: There are two players. Each take turn to roll a 6-sided die; a player repeatedly rolls it until the player chooses to stop rolling and pass the dice to the other player, and add the sum of previous rolls to their points, or the player rolls a 1 during their turn, which all of their previous rolls are discarded and their turn ends immediately. The first to reach 100 points win. I've finished the code, tried to make it as robust as possible, and ended up with this:</p>
      <div class="container-fluid sect-1">
           <div class="game row">
             <div class="col-md-3">
@@ -26,22 +27,18 @@
                   <div class="dice1" id="dice1">SCORE::0</div>
                   <img src="images/img6.png" id="image1" class="img-fluid"/><br><br>
                     <button onclick=Kadweka1();>ROLL</button>
-                  <button type="button"  onclick="function" name="button">HOLD</button>
+                  <button type="button"  name="button">HOLD</button>
                       </div>
                   <div class="col-md-3">
                   <h4>PLAYER2</h4>
                 <div class="dice1" id="dice1">SCORE::0</div>
                 <img src="images/img6.png" id="image2" class="img-fluid"/><br><br>
                 <button onclick=Kadweka2();>ROLL</button>
-        <button type="button" onclick="rollDIce" name="button">HOLD</button>
+        <button type="button" name="button">HOLD</button>
       </di>
       </div>
     </div>
-      </div>
-
-      <!-- <img src="images/img6.png" id="image" />
-      <button onclick=lancio();>ROLL</button> -->
-
+  </div>
 
 
     <!-- SCRIPTS -->

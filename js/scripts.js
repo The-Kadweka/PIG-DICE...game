@@ -34,3 +34,5 @@ image[5]= 'images/img10.png';
   document.getElementById("image2").src=image[temp];
 
 }
+
+
