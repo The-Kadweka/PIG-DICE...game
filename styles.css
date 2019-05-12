@@ -12,14 +12,12 @@
 }
 #game{
   border: 3px solid red;
-  width: 50%;
   background-image: url("images/img4.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  justify-content: center;
- opacity: 0.88;
- display: none; 
+  display: none; 
+  height: auto;
 }
 button{
   height: 30px;
@@ -29,7 +27,7 @@ button{
 }
 .row{
   float: inherit;
-  width: 55%;
+  white-space: nowrap;
   display: flex;
   margin-left: 25%;
 }
@@ -91,15 +89,6 @@ footer{
   text-align: center;
   color: oarange;
 }
-
-.fa-user{
-  background-color: aqua;
-  padding: 12px 20px;
-}
-.icon { 
-  padding: 10px; 
-  min-width: 40px; 
-} 
 #button3{
   background-color: greenyellow;
   width: 80px;
@@ -108,12 +97,8 @@ footer{
   margin-right: 5%;
 }
 
-#player1{
-  margin-right: 10%;
-}
 #rules{
   display: none;
 }
-
 
 

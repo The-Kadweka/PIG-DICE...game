@@ -59,8 +59,7 @@ class Player {
   rollone() {
     if (this.roll === 1) {
       this.tempscore = 0;
-      alert("SORRY!.." + this.playerName + " IT'S SECOND PLAYER'S CHANCE");
-    }
+      alert("Sorry !" + this.playerName + " second-player's chance! ");    }
     else {
       this.tempscore += this.roll;
     }
@@ -71,7 +70,7 @@ class Player {
     this.totalscore += this.tempscore;
     this.tempscore = 0;
     // this.changeturn();
-    alert("SORRY!.." + this.playerName + " IT'S FIRST PLAYER'S CHANCE");
+    alert("Sorry !" + this.playerName + " second-player's chance! ");
   }
 
   // check for 100
@@ -98,10 +97,6 @@ $(document).ready(function() {
   $("button#start").click(function(event){
     player1 = new Player(true);
     player2 =  new Player(false);
-    // $("#game").fadeOut();
-    // $("#game").fadeIn();
-    // $("#game").show();
-    // $("#game2").hide();
 
     var player1Name = $(".player1Name").val();
     $("#player1Name").text(player1Name);
@@ -161,16 +156,27 @@ $(document).ready(function() {
 
 
 
-
+// *****************USER INTERFACE FADING IN AND OUT********************************///
 
 
 $(document).ready(function() {
   $("#start").click(function() {
-    $("#rules").hide();
+    $("#start").hide();
   });
 
   $("#start").click(function() {
     $("form").hide(2000)
     $("#game").fadeIn(2000);
+  });
+
+  $("#newgame").click(function() {
+    $("#game").hide(2000);
+    $("form").fadeIn(2000);
+    $("#start").show(2000);
+  });
+
+  
+  $("#help").click(function() {
+    $("#rules").fadeIn(2000);
   });
 });
