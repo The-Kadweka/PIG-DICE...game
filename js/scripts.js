@@ -1,3 +1,5 @@
+// ***************THE ROLLING LOGINC*********************************************
+
 function Kadweka1() {
 
   var temp=0;
@@ -32,5 +34,11 @@ image[5]= 'images/img10.png';
   temp = Math.floor(Math.random() * 6);
 
   document.getElementById("image2").src=image[temp];
-
 }
+
+
+$('.submit').click(function(e){    
+  $('.submit').fadeOut('slow', function(){
+      $('#game').fadeIn('slow');
+  });
+});

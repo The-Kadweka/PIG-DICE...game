@@ -17,8 +17,6 @@
   background-size: cover;
   background-position: center;
   justify-content: center;
-}
-.row{
   display: none;
 }
 button{
@@ -45,7 +43,7 @@ input[type=text], select {
   width: 50%;
   }
 
-input[type=submit] {
+button[type=submit] {
   width: 100%;
   background-color: #4CAF50;
   color: white;
@@ -55,6 +53,7 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   width: 50%;
+  height: 50px;
 }
 
 input[type=submit]:hover {
@@ -89,3 +88,13 @@ footer{
   text-align: center;
   color: oarange;
 }
+
+.fa-user{
+  background-color: aqua;
+  padding: 12px 20px;
+}
+.icon { 
+  padding: 10px; 
+  min-width: 40px; 
+} 
+
