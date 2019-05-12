@@ -8,6 +8,7 @@
   text-align: center;
   color: orangered;
   justify-content: center;
+  padding: 5%;
 }
 #game{
   border: 3px solid red;
@@ -17,7 +18,8 @@
   background-size: cover;
   background-position: center;
   justify-content: center;
-  display: none;
+ opacity: 0.88;
+ display: none; 
 }
 button{
   height: 30px;
@@ -97,4 +99,18 @@ footer{
   padding: 10px; 
   min-width: 40px; 
 } 
+#button3{
+  background-color: greenyellow;
+  width: 80px;
+  height: 35px;
+  text-align: center;
+  margin-right: 5%;
+}
+
+#player1{
+  margin-right: 10%;
+}
+
+
+
 

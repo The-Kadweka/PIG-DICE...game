@@ -20,41 +20,49 @@
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <body>
      <div class="container-fluid sect-1">
-       <div id="game2">
+       <h1>THE DICE-GAME </h1>
+       <div id="game2 start-menu">
         <h2>RULES OF THE GAME</h2>
         <p>The rules are: There are two players. Each take turn to roll a 6-sided die; a player repeatedly rolls it until the player chooses to stop rolling and pass the dice to the other player, and add the sum of previous rolls to their points, or the player rolls a 1 during their turn, which all of their previous rolls are discarded and their turn ends immediately. The first to reach 100 points win. I've finished the code, tried to make it as robust as possible, and ended up with this:</p>
             <div class="form">
                 <form>
                 <h2>ENTER-PLAYER'S NAME</h2>
-                <div class="icon">
-                  <i class="fas fa-user prefix"></i>
-                  <input class="fa fa-user icon" type="text" id="player1" name="firstname" placeholder="PLAYER1" value="">
-                </div>
-                <div class="icon">
-                  <i class="fas fa-user prefix"></i>
-                  <input class="fa fa-user icon" type="text" id="player2" name="lastname" placeholder="PLAYER2"  value="">  
-                </div>
-                  <button type="submit" class="submit" id="click">Start-Game</button>
+                <form id="player-1">
+                    <div class="form-group">
+                      <label for="player1Name">Player 1 Name:</label>
+                      <input required class="player1Name form-control" type="text">
+                       </div>
+                    </form>
+                   <form id="player-2">
+                   <div class="form-group">
+                 <label for="player2Name">Player 2 Name:</label>
+              <input required class="player2Name form-control" type="text">
+            </div>
+          </form>
+                <button id="start"  class="submit" class="btn-info btn">Start</button>
                 </form>
               </div>
-            </div>
+            </div> 
 
           <div class="row" id="game">
-            <div class="col-md-3">
-              <h4>PLAYER1</h4>
-                  <div class="dice1" id="dice1">SCORE::0</div>
-                  <div><span>TOTAL SCORE:0</span class="score1" ></div>
-                  <img src="images/img6.png" id="image1" class="img-fluid"/><br><br>
-                    <button onclick=Kadweka1(),enable1(),disabled1(); id="roll1">ROLL</button>
-                  <button type="button" id="buton1" name="button">HOLD</button>
-                      </div>
+             <div class="col-md-3">
+                <h2>Player 1: <span id = "player2Name"><span></h2>
+            <h4>Dice Roll: <span id="die-roll-1"></span></h4>
+            <p>Round Total: <span id="round-total-1"></span></p>
+            <p>Total Score: <span id="total-score-1"></span></p>
+          <img src="images/img6.png" id="image1" class="img-fluid"/><br><br>
+          <button onclick=Kadweka1() id="player1-roll">ROLL</button>
+        <button type="button" id="player1-hold" name="button">HOLD</button>
+</di>
+</div>
                   <div class="col-md-3">
-                  <h4>PLAYER2</h4>
-                <div class="dice1" id="dice1">SCORE::0</div>
-                <div><span class="score2">TOTAL SCORE:0</span></div>
+                      <h2>Player 2: <span id = "player2Name"><span></h2>
+                  <h4>Dice Roll: <span id="die-roll-2"></span></h4>
+                  <p>Round Total: <span id="round-total-2"></span></p>
+                  <p>Total Score: <span id="total-score-2"></span></p>
                 <img src="images/img6.png" id="image2" class="img-fluid"/><br><br>
-                <button onclick=Kadweka2(),enable2(),disabled2();>ROLL</button>
-        <button type="button" name="button">HOLD</button>
+                <button onclick=Kadweka2() id="player2-roll">ROLL</button>
+        <button type="button" id="player2-hold" name="button">HOLD</button>
       </di>
       </div>
     </div>
