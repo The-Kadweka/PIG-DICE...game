@@ -64,7 +64,8 @@ input[type=submit]:hover {
 h2{
 text-align: center;
 color: orange;
-font-family: 'Ultra', serif;
+/* font-family: 'Ultra', serif; */
+font-weight: 1vh;
 
 }
 
@@ -110,7 +111,9 @@ footer{
 #player1{
   margin-right: 10%;
 }
-
+#rules{
+  display: none;
+}
 
 
 

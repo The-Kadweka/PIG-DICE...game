@@ -21,9 +21,12 @@
   <body>
      <div class="container-fluid sect-1">
                     <div id="game2 start-menu">
+                      <div id="rules">
                            <h2>RULES OF THE GAME</h2>
                                   <p>The rules are: There are two players. Each take turn to roll a 6-sided die; a player repeatedly rolls it until the player chooses to stop rolling and pass the dice to the other player, and add the sum of previous rolls to their points, or the player rolls a 1 during their turn, which all of their previous rolls are discarded and their turn ends immediately. The first to reach 100 points win. I've finished the code, tried to make it as robust as possible, and ended up with this:</p>
-                               <div class="form">
+                                  <button id="help"  class="fa fa-home">HOME</button>
+                                   </div>
+                               <div class="form" id="form"> 
                            <form>
                                 <h2>ENTER-PLAYER'S NAME</h2>
                                   <form id="player-1">
@@ -39,22 +42,24 @@
                                      </div>
                                  </form>
                             <button id="start"  class="submit" class="btn-info btn">Start</button>
+                            <button id="help">help!</button>
                       </form>
                     </div>
                  </div> 
           <div class="row" id="game">
               <h1>THE DICE-GAME </h1>
              <div class="col-md-3">
-                <h2>Player 1: <span id = "player2Name"><span></h2>
+                <h2>Player1: <span id = "player2Name"><span></h2>
                    <h4>Dice Roll: <span id="roll-1"></span></h4>
                        <p>Round Total: <span id="round-1"></span></p>
                           <p>Total Score: <span id="total-1"></span></p>
                              <img src="images/img6.png" id="image1" class="img-fluid"/><br><br>
                                <button onclick=Kadweka1() id="player1-roll">ROLL</button>
                                   <button type="button" id="player1-hold" name="button">HOLD</button>
+                                  <p id="results"></p>
                                     </div>
                                       <div class="col-md-3">
-                                      <h2>Player 2: <span id = "player2Name"><span></h2>
+                                      <h2>Player2: <span id = "player2Name"><span></h2>
                                       <h4>Dice Roll: <span id="roll-2"></span></h4>
                                     <p>Round Total: <span id="round-t2"></span></p>
                                  <p>Total Score: <span id="total-2"></span></p>
@@ -64,12 +69,10 @@
                </di>
           </div> 
     </div>
-  </div>
-<footer>
+    <footer>
         &copyhussein18149-2019
 </footer>
-  
-
+  </div>
    <!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>

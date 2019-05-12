@@ -76,8 +76,9 @@ class Player {
 
   // check for 100
   checkingWinner() {
-    if (this.totalscore == 100) {
-      alert(this.playerName + " CONGRATULATION " + this.playerName + " YOU WON!.");
+    if (this.totalscore>=100) {
+      document.getElementById("result").innerText=(this.playerName + " CONGRATULATION " + this.playerName + " YOU WON!.");
+      alert
     }
   }
 
@@ -97,8 +98,10 @@ $(document).ready(function() {
   $("button#start").click(function(event){
     player1 = new Player(true);
     player2 =  new Player(false);
-    $("#game").show();
-    $("#game2").hide();
+    // $("#game").fadeOut();
+    // $("#game").fadeIn();
+    // $("#game").show();
+    // $("#game2").hide();
 
     var player1Name = $(".player1Name").val();
     $("#player1Name").text(player1Name);
@@ -153,5 +156,21 @@ $(document).ready(function() {
     $("#round-2").empty();
     $("#roll-2").empty();
     player2.winnerHere();
+  });
+});
+
+
+
+
+
+
+$(document).ready(function() {
+  $("#start").click(function() {
+    $("#rules").hide();
+  });
+
+  $("#start").click(function() {
+    $("form").hide(2000)
+    $("#game").fadeIn(2000);
   });
 });
