@@ -175,8 +175,17 @@ $(document).ready(function() {
     $("#start").show(2000);
   });
 
-  
+
+  $("#help1").click(function() {
+    $("#rules").hide(2000)
+    $("#game").hide(2000)
+    $("#form").fadeIn(2000);
+  });
+
+
   $("#help").click(function() {
+    $("#form").hide(2000)
+    $("#game").hide(2000)
     $("#rules").fadeIn(2000);
   });
 });
