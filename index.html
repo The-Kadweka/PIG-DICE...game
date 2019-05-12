@@ -24,16 +24,16 @@
                       <div id="rules">
                            <h2>RULES OF THE GAME</h2>
                                   <p>The rules are: There are two players. Each take turn to roll a 6-sided die; a player repeatedly rolls it until the player chooses to stop rolling and pass the dice to the other player, and add the sum of previous rolls to their points, or the player rolls a 1 during their turn, which all of their previous rolls are discarded and their turn ends immediately. The first to reach 100 points win. I've finished the code, tried to make it as robust as possible, and ended up with this:</p>
-                                  <button id="help"  class="fa fa-home"></button>
-                                   </div>
-                               <div class="form" id="form"> 
-                           <form>
-                                <h2>ENTER-PLAYER'S NAME</h2>
-                                  <form id="player-1">
-                                    <div class="form-group">
-                                      <label for="player1Name">Player 1 Name:</label>
-                                       <input required class="player1Name form-control" type="text">
-                                          </div>
+                                              <button id="help"  class="fa fa-home"></button>
+                                              </div>
+                                          <div class="form" id="form"> 
+                                                   <form>
+                                            <h2>ENTER-PLAYER'S NAME</h2>
+                                              <form id="player-1">
+                                                <div class="form-group">
+                                                  <label for="player1Name">Player 1 Name:</label>
+                                                  <input required class="player1Name form-control" type="text">
+                                                      </div>
                                             </form>
                                               <form id="player-2">
                                             <div class="form-group">
@@ -47,35 +47,36 @@
                       </form>
                     </div>
                  </div> 
-          <div class="row" id="game">
+       <div id="game">
               <h1>THE DICE-GAME </h1>
-             <div class="col-md-3">
-                <h2>Player1: <span id = "player1Name"><span></h2>
-                   <h4>Dice Roll: <span id="roll-1"></span></h4>
-                       <p>Round Total: <span id="round-1"></span></p>
-                          <p>Total Score: <span id="total-1"></span></p>
-                             <img src="images/img6.png" id="image1" class="img-fluid"/><br><br>
-                               <button onclick=Kadweka1() id="player1-roll">ROLL</button>
-                                  <button type="button" id="player1-hold" name="button">HOLD</button>
-                                  <p id="results"></p>
-                                    </div>
-                                    <div>
-                                      <div class="col-md-3">
-                                      <h2>Player2: <div id = "player2Name"></div></h2>
-                                      <h4>Dice Roll: <div id="roll-2"></div></h4>
-                                    <p>Round Total: <div id="round-t2"></div></p>
-                                 <p>Total Score: <div id="total-2"></div></p>
-                              <img src="images/img6.png" id="image2" class="img-fluid"/><br><br>
-                         <button onclick=Kadweka2() id="player2-roll">ROLL</button>
-                   <button type="button" id="player2-hold" name="button">HOLD</button>
-               </di>
-          </div> 
-        </div>
-      </div>
-    <footer>
-        &copyhussein18149-2019
-</footer>
-  </div>
+                  <div class="container">     
+                      <div class="row">
+                          <div class="col-sm-6 bg-success">
+                              <h2>Player1: <span id = "player1Name"><span></h2>
+                                   <h4>Dice Roll: <span id="roll-1"></span></h4>
+                                     <p>Round Total: <span id="round-1"></span></p>
+                                        <p>Total Score: <span id="total-1"></span></p>
+                                           <img src="images/img6.png" id="image1" class="img-fluid"/><br><br>
+                                             <button onclick=Kadweka1() id="player1-roll">ROLL</button>
+                                                <button type="button" id="player1-hold" name="button">HOLD</button>
+                                                  <p id="results"></p>
+                                                  </div>
+                                                  <div class="col-sm-6 bg-warning">
+                                                  <h2>Player1: <span id = "player1Name"><span></h2>
+                                                  <h4>Dice Roll: <span id="roll-1"></span></h4>
+                                                    <p>Round Total: <span id="round-1"></span></p>
+                                                    <p>Total Score: <span id="total-1"></span></p>
+                                                <img src="images/img6.png" id="image1" class="img-fluid"/><br><br>
+                                          <button onclick=Kadweka1() id="player1-roll">ROLL</button>
+                                      <button type="button" id="player1-hold" name="button">HOLD</button>
+                              <p id="results"></p>
+                            </div>
+                        </div>
+                    </div>
+            <footer>
+            &copyhussein18149-2019
+        </footer>
+</div>
    <!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>

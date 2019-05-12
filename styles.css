@@ -25,12 +25,12 @@ button{
   color: orangered;
   background-color: black;
 }
-.row{
+/* .row{
   float: inherit;
   white-space: nowrap;
   display: flex;
   margin-left: 25%;
-}
+} */
 
 input[type=text], select {
   width: 100%;
@@ -98,7 +98,10 @@ footer{
 }
 
 #rules{
-  display: none;
+  /* display: none; */
 }
 
-
+#image1,#image2{
+  height: 100px;
+  width: 100px;
+}
