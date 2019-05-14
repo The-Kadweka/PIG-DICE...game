@@ -89,8 +89,6 @@ class Player {
     this.playerName = "";
   }
 }
-
-
 // *************USER INTERFACE*********************************************
 $(document).ready(function() {
 
