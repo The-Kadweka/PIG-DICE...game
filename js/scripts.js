@@ -18,7 +18,6 @@ image[5]= 'images/img10.png';
 
 }
 
-
 function Kadweka2() {
 
   var temp=0;
