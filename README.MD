@@ -23,8 +23,14 @@ This is a funny game.Its simple and easy to play.When you roll the dice,you get 
 
 Language used are three where html was used for the code to be executed of the server,css was used to style and add images tothe page and java script was used to set the conditions and make it interractice
 
+
+## KNOWN-BAGS
++ images dont roll randomly with the players roll
+
 ## Link to the live deployed site
 + 
+
+
 ### contacts
 
 + husseinkatana17@gmail.com
