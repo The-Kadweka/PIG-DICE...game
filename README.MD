@@ -28,7 +28,7 @@ Language used are three where html was used for the code to be executed of the s
 + images dont roll randomly with the players roll
 
 ## Link to the live deployed site
-+ 
++ https://hussein18149.github.io/PIG-DICE...game/
 
 
 ### contacts
